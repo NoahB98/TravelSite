@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Bahamas Travel</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-    <script>
-      $(document).ready(function() {
-        $("#datepicker").datepicker();
-        $("#pickerdate").datepicker();
-      });
-    </script>
-  </head>
-  <body>
-    <h2>The Bahamas</h2>
-    <div class="container">
-    <form method="get" action="thankyou.html">
-        <fieldset>
-          <legend>
-            Contact Information
-          </legend>
+<head>
+  <meta charset="utf-8">
+  <title>Bahamas Travel</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $("#datepicker").datepicker();
+      $("#pickerdate").datepicker();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="headerText">
+    <h1>The Bahamas</h1>
+  </div>
+  <div class="container">
+    <div class="information">
+       <form method="get" action="thankyou.html">
+      <fieldset>
+        <legend>
+          Contact Information
+        </legend>
         <label for="fname">
         Name: <input class="names" autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
         </label>
@@ -36,13 +41,13 @@
           Phone: <input class="names" type="text" name ="phone" id="phone" required placeholder= "Phone Number" />
         </label>
       </fieldset>
-    </form>
-    <form method="get" action="thankyou.html">
-      <fieldset>
-        <label>
+      </form>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <label>
           Reservation Request
         </label>
-        <select name="hotels">
+          <select name="hotels">
           <option value="British Colonial Hilton Nassau">British Colonial Hilton Nassau</option>
           <option value="Paradise Beach">Paradise Beach</option>
           <option value="The Island House">The Island House</option>
@@ -50,8 +55,10 @@
           <option value="Small Hope Bay Lodge">Small Hope Bay Lodge</option>
         </select>
           <input id="datepicker" /> Through <input id="pickerdate" />
-      </fieldset>
-    </form>
+        </fieldset>
+      </form>
+    </div>
   </div>
-  </body>
+</body>
+
 </html>
