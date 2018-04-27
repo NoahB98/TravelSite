@@ -20,34 +20,37 @@
 <body>
   <div class="headerText">
     <h1>The Bahamas</h1>
-    <a href="index.html"> Home </a>
+    <div class="navbar">
+      <a href="index.html"> Home </a>
+      <a href="registration.html"> Book Now </a>
+    </div>
   </div>
   <div class="container">
     <div class="information">
-       <form method="get" action="thankyou.html">
+       <form action="checkout.html">
       <fieldset>
         <legend>
           Contact Information
         </legend>
-        <label for="fname">
+        <label class="checkout" for="fname">
         Name: <input class="names" autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
         </label>
-        <label for="lname">
+        <label class="checkout" for="lname">
           Last Name: <input class="names" type="text" name="lname" id="lname" required placeholder="Last Name" />
         </label>
-        <label for="email">
-          Email: <input class="names" type="email" name="email" id="email" required placeholder="Email" />
+        <label class="checkout" for="email">
+          Email: <input class="names" type="text" name="email" id="email" required placeholder="Email" />
         </label>
-        <label for="phone">
+        <label class="checkout" for="phone">
           Phone: <input class="names" type="text" name ="phone" id="phone" required placeholder= "Phone Number" />
         </label>
       </fieldset>
       </form>
-      <form method="get" action="thankyou.html">
+      <form method="get" action="checkout.html">
         <fieldset>
           <label>
           Reservation Request
-        </label>
+        </label></br>
           <select name="hotels">
           <option value="British Colonial Hilton Nassau">British Colonial Hilton Nassau</option>
           <option value="Paradise Beach">Paradise Beach</option>
@@ -57,6 +60,7 @@
         </select>
           <input id="datepicker" /> Through <input id="pickerdate" />
         </fieldset>
+        <input type="Submit" name="Submit" value="Submit" style="font-size: 24px;">
       </form>
     </div>
   </div>
