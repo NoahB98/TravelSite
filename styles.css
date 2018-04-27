@@ -101,3 +101,10 @@ span.price {
   float: right;
   color: grey;
 }
+
+.About{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+
+}
